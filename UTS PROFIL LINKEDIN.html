@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil pribadi Pegy Verdianti - UTS Praktikum Pemrograman Web Dasar">
+  <title>Pegy Verdianti | Profil Pribadi</title>
+  <link rel="icon" href="Pegy Verdianti.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+  DATA PROFIL SUDAH DIISI SESUAI CV Pegy Verdianti.
+  Yang masih perlu kamu lengkapi sendiri:
+  1. Link Instagram pada section KONTAK (masih berisi "username").
+  2. Tahun masuk/keluar pada table PENDIDIKAN kalau diperlukan.
+  Foto profil memakai file "Pegy Verdianti.jpeg" yang ada di folder yang sama.
+-->
+<body>
+
+  <!-- ================= NAVBAR + HAMBURGER (Soal 03) ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand">
+        <span class="brand-mark">PV</span>
+        <span class="brand-name">Pegy Verdianti</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">Buka menu</span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#kontak" class="nav-cta">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HEADER PROFIL (Soal 01) ================= -->
+    <section class="hero" id="beranda" aria-labelledby="beranda-title">
+      <div class="container hero-inner">
+        <div class="hero-media">
+          <img class="avatar" src="Pegy Verdianti.jpeg" alt="Foto profil Pegy Verdianti" width="180" height="180">
+        </div>
+        <div class="hero-text">
+          <h1 id="beranda-title">Pegy Verdianti</h1>
+          <p class="tagline">Pegawai BPBD Kota Kediri &mdash; Mahasiswa Sistem Informasi</p>
+          <p class="location">Kota Kediri, Jawa Timur, Indonesia</p>
+          <div class="hero-actions">
+            <a href="#kontak" class="btn btn-primary">Hubungi Saya</a>
+            <a href="#pengalaman" class="btn btn-ghost">Lihat Pengalaman</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TENTANG SAYA ================= -->
+    <section class="section" id="tentang" aria-labelledby="tentang-title">
+      <div class="container narrow">
+        <h2 id="tentang-title" class="section-title">Tentang Saya</h2>
+        <p>Saya adalah pribadi yang bertanggung jawab, disiplin, dan mampu bekerja secara individu maupun dalam tim. Saat ini saya bekerja di Badan Penanggulangan Bencana Daerah (BPBD) Kota Kediri dan sedang menempuh pendidikan perkuliahan. Saya memiliki ketertarikan pada teknologi informasi, administrasi, manajemen, serta pelayanan kepada masyarakat.</p>
+        <dl class="fact-list">
+          <div><dt>Tempat, tanggal lahir</dt><dd>Kediri, 22 Mei 1997</dd></div>
+          <div><dt>Jenis kelamin</dt><dd>Perempuan</dd></div>
+          <div><dt>Status</dt><dd>Mahasiswa / Pegawai</dd></div>
+          <div><dt>Kewarganegaraan</dt><dd>Indonesia</dd></div>
+          <div><dt>Alamat</dt><dd>Kota Kediri, Jawa Timur</dd></div>
+          <div><dt>Program studi</dt><dd>Sistem Informasi</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= PENDIDIKAN ================= -->
+    <section class="section section-alt" id="pendidikan" aria-labelledby="pendidikan-title">
+      <div class="container narrow">
+        <h2 id="pendidikan-title" class="section-title">Pendidikan</h2>
+        <table class="table">
+          <caption class="visually-hidden">Riwayat pendidikan dari jenjang tertinggi</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tahun</th>
+              <th scope="col">Jenjang</th>
+              <th scope="col">Instansi</th>
+              <th scope="col">Bidang</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sedang ditempuh</td>
+              <td>Perguruan Tinggi</td>
+              <td>Universitas Dian Nusantara (UDINUS) Kampus Kota Kediri</td>
+              <td>Sistem Informasi</td>
+            </tr>
+            <tr>
+              <td>Lulus 2016</td>
+              <td>SMK</td>
+              <td>SMK TI Pelita Nusantara Kediri</td>
+              <td>Teknik Komputer dan Jaringan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ================= KEAHLIAN ================= -->
+    <section class="section" id="keahlian" aria-labelledby="keahlian-title">
+      <div class="container">
+        <h2 id="keahlian-title" class="section-title">Keahlian</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Penanggulangan Bencana</h3>
+            <ul class="tags">
+              <li>Water Rescue</li>
+              <li>Vertical Rescue</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Teknologi &amp; Administrasi</h3>
+            <ul class="tags">
+              <li>Teknologi Informasi</li>
+              <li>Administrasi</li>
+              <li>Manajemen</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Komunikasi &amp; Pelayanan</h3>
+            <ul class="tags">
+              <li>Komunikasi</li>
+              <li>Pelayanan Masyarakat</li>
+              <li>Kerja Tim</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Manajemen Diri</h3>
+            <ul class="tags">
+              <li>Manajemen Waktu</li>
+              <li>Problem Solving</li>
+              <li>Disiplin</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PENGALAMAN KERJA ================= -->
+    <section class="section section-alt" id="pengalaman" aria-labelledby="pengalaman-title">
+      <div class="container narrow">
+        <h2 id="pengalaman-title" class="section-title">Pengalaman Kerja</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <h3>Pegawai / Staf &mdash; BPBD Kota Kediri</h3>
+            <p class="period">Badan Penanggulangan Bencana Daerah Kota Kediri</p>
+            <p>Melaksanakan tugas pemerintahan dan mendukung kegiatan pelayanan serta penanggulangan bencana di lingkungan Kota Kediri.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section class="section" id="kontak" aria-labelledby="kontak-title">
+      <div class="container narrow">
+        <h2 id="kontak-title" class="section-title">Kontak</h2>
+        <p class="section-note">Silakan menghubungi saya melalui email, telepon, atau media sosial berikut.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:pegyverdianti@gmail.com">pegyverdianti@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Telepon</span>
+            <a href="tel:+6285853790199">0858-5379-0199</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/pegy-verdianti-617499196/" target="_blank" rel="noopener">linkedin.com/in/pegy-verdianti</a>
+          </li>
+          <li>
+            <span class="contact-label">Instagram</span>
+            <a href="https://www.instagram.com/pegyrakeri" target="_blank" rel="noopener">@pegyrakeri</a>
+          </li>
+          <li>
+            <span class="contact-label">Lokasi kerja</span>
+            <span>BPBD Kota Kediri, Jawa Timur</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pegy Verdianti &mdash; UTS Pemrograman Web Dasar.</p>
+      <a href="#beranda" class="to-top">Kembali ke atas &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

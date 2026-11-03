@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Pegy Verdianti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e9eef2;
+            color: #333;
+        }
+
+        .cv {
+            width: 850px;
+            max-width: 95%;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* BAGIAN ATAS */
+        .header {
+            background-color: #0b5d56;
+            color: white;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .foto {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .header h1 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        .header h2 {
+            font-size: 19px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+        }
+
+        /* ISI */
+        .content {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #0b5d56;
+            font-size: 22px;
+            border-bottom: 3px solid #0b5d56;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* PROFIL */
+        .profil {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* DATA PRIBADI */
+        .data {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+            line-height: 1.7;
+        }
+
+        .data strong {
+            color: #0b5d56;
+        }
+
+        /* PENDIDIKAN & PENGALAMAN */
+        .item {
+            border-left: 4px solid #0b5d56;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .item h3 {
+            color: #0b5d56;
+            margin-bottom: 5px;
+        }
+
+        .tahun {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .item p {
+            line-height: 1.6;
+        }
+
+        /* SKILL */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #dff3ef;
+            color: #0b5d56;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* KONTAK */
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .contact-box {
+            background-color: #f3f5f6;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .contact-box strong {
+            color: #0b5d56;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0b5d56;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+        }
+
+        /* TAMPILAN HP */
+        @media screen and (max-width: 600px) {
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .data {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- Ganti foto.jpg dengan foto Anda -->
+            <img src="Pegy Verdianti.jpeg" alt="Pegy Verdianti" class="foto">
+
+            <div>
+                <h1>Pegy Verdianti</h1>
+
+                <h2>
+                    Berkerja | Mahasiswa
+                </h2>
+
+                <p>
+                    Badan Penanggulangan Bencana Daerah Kota Kediri
+                </p>
+            </div>
+
+        </header>
+
+
+        <main class="content">
+
+            <!-- PROFIL -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    PROFIL
+                </h2>
+
+                <p class="profil">
+                    Saya adalah pribadi yang bertanggung jawab, disiplin,
+                    mampu bekerja secara individu maupun dalam tim.
+                    Saat ini saya bekerja di Badan Penanggulangan Bencana
+                    Daerah (BPBD) Kota Kediri dan sedang menempuh pendidikan
+                    perkuliahan. Saya memiliki ketertarikan pada teknologi
+                    informasi, administrasi, manajemen, serta pelayanan
+                    kepada masyarakat.
+                </p>
+
+            </section>
+
+
+            <!-- DATA PRIBADI -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    DATA PRIBADI
+                </h2>
+
+                <div class="data">
+
+                    <strong>Nama</strong>
+                    <span>Pegy Verdianti</span>
+
+                    <strong>Tempat, Tanggal Lahir</strong>
+                    <span>Kediri, 22-05-1997</span>
+
+                    <strong>Jenis Kelamin</strong>
+                    <span>Perempuan</span>
+
+                    <strong>Alamat</strong>
+                    <span>Kota Kediri, Jawa Timur</span>
+
+                    <strong>Status</strong>
+                    <span>Mahasiswa / Pegawai</span>
+
+                    <strong>Kewarganegaraan</strong>
+                    <span>Indonesia</span>
+
+                </div>
+
+            </section>
+
+
+            <!-- PENDIDIKAN -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    PENDIDIKAN
+                </h2>
+
+                <div class="item">
+
+                    <h3>Perguruan Tinggi</h3>
+
+                    <div class="tahun">
+                        Sedang Menempuh Pendidikan
+                    </div>
+
+                    <p>
+                        Program Studi: Sistem Informasi
+                    </p>
+
+                </div>
+
+
+                <div class="item">
+
+                    <h3>Sekolah Menengah Atas</h3>
+
+                    <div class="tahun">
+                        Tahun: 2016
+                    </div>
+
+                    <p>
+                        Nama Sekolah: SMK TI Pelita Nusantara Kediri
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- PENGALAMAN -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    PENGALAMAN KERJA
+                </h2>
+
+                <div class="item">
+
+                    <h3>
+                        Badan Penanggulangan Bencana Daerah
+                        Kota Kediri
+                    </h3>
+
+                    <div class="tahun">
+                        Pegawai / Staf
+                    </div>
+
+                    <p>
+                        Melaksanakan tugas pemerintahan dan mendukung
+                        kegiatan pelayanan serta penanggulangan bencana
+                        di lingkungan Kota Kediri.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- KETERAMPILAN -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    KETERAMPILAN
+                </h2>
+
+                <div class="skills">
+
+                    <span class="skill">
+                        Water Rescue
+                    </span>
+
+                    <span class="skill">
+                        Vertical Rescue
+                    </span>
+
+                    <span class="skill">
+                        Komunikasi
+                    </span>
+
+                    <span class="skill">
+                        Kerja Tim
+                    </span>
+
+                    <span class="skill">
+                        Manajemen Waktu
+                    </span>
+
+                    <span class="skill">
+                        Teknologi Informasi
+                    </span>
+
+                    <span class="skill">
+                        Problem Solving
+                    </span>
+
+                    <span class="skill">
+                        Pelayanan Masyarakat
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- KONTAK -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    KONTAK
+                </h2>
+
+                <div class="contact">
+
+                    <div class="contact-box">
+                        📱 <strong>Telepon</strong>
+                        <br>
+                        085853790199
+                    </div>
+
+                    <div class="contact-box">
+                        ✉️ <strong>Email</strong>
+                        <br>
+                        pegyverdianti@gmail.com
+                    </div>
+
+                    <div class="contact-box">
+                        📍 <strong>Alamat</strong>
+                        <br>
+                        Kota Kediri, Jawa Timur
+                    </div>
+
+                    <div class="contact-box">
+                        💼 <strong>Pekerjaan</strong>
+                        <br>
+                        Badan Penanggulangan Bencana Daerah
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        
+        <footer>
+
+            © 2026 Pegy Verdianti | Curriculum Vitae
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
+```

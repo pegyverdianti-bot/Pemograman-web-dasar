@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata Ir. Soekarno</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #c62828, #8e0000);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        .foto {
+            flex: 1;
+            text-align: center;
+        }
+
+        .foto img {
+            width: 280px;
+            height: 390px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 5px solid #c62828;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .foto p {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .biodata {
+            flex: 2;
+        }
+
+        .biodata h2 {
+            color: #c62828;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #c62828;
+            padding-bottom: 8px;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: 180px 20px auto;
+            row-gap: 14px;
+            font-size: 16px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .sejarah {
+            padding: 0 40px 40px 40px;
+        }
+
+        .sejarah h2 {
+            color: #c62828;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #c62828;
+            padding-bottom: 8px;
+        }
+
+        .sejarah p {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .data {
+                grid-template-columns: 130px 15px auto;
+                font-size: 14px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>IR. SOEKARNO</h1>
+            <p>Presiden Pertama Republik Indonesia</p>
+        </div>
+
+        <!-- FOTO DAN BIODATA -->
+        <div class="content">
+
+            <div class="foto">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/02/Presiden_Indonesia_1945_--_2024.pdf"
+                    alt="Foto Ir. Soekarno">
+
+                <p>
+                    Ir. Soekarno<br>
+                    Presiden Pertama Republik Indonesia
+                </p>
+            </div>
+
+            <div class="biodata">
+
+                <h2>Biodata</h2>
+
+                <div class="data">
+
+                    <span class="label">Nama</span>
+                    <span>:</span>
+                    <span>Ir. Soekarno</span>
+
+                    <span class="label">Nama Lahir</span>
+                    <span>:</span>
+                    <span>Koesno Sosrodihardjo</span>
+
+                    <span class="label">Nama Panggilan</span>
+                    <span>:</span>
+                    <span>Bung Karno</span>
+
+                    <span class="label">Tempat Lahir</span>
+                    <span>:</span>
+                    <span>Surabaya, Jawa Timur</span>
+
+                    <span class="label">Tanggal Lahir</span>
+                    <span>:</span>
+                    <span>6 Juni 1901</span>
+
+                    <span class="label">Tanggal Wafat</span>
+                    <span>:</span>
+                    <span>21 Juni 1970</span>
+
+                    <span class="label">Tempat Wafat</span>
+                    <span>:</span>
+                    <span>Jakarta</span>
+
+                    <span class="label">Kebangsaan</span>
+                    <span>:</span>
+                    <span>Indonesia</span>
+
+                    <span class="label">Profesi</span>
+                    <span>:</span>
+                    <span>Insinyur dan negarawan</span>
+
+                    <span class="label">Jabatan</span>
+                    <span>:</span>
+                    <span>Presiden Republik Indonesia</span>
+
+                    <span class="label">Masa Jabatan</span>
+                    <span>:</span>
+                    <span>1945 – 1967</span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SEJARAH -->
+        <div class="sejarah">
+
+            <h2>Biografi Singkat</h2>
+
+            <p>
+                Ir. Soekarno atau yang dikenal dengan panggilan Bung Karno
+                merupakan Presiden pertama Republik Indonesia dan salah satu
+                tokoh utama dalam perjuangan kemerdekaan Indonesia.
+            </p>
+
+            <p>
+                Soekarno lahir pada 6 Juni 1901. Ia menempuh pendidikan di
+                Surabaya dan kemudian melanjutkan pendidikan teknik di Bandung.
+                Soekarno memperoleh gelar insinyur dari Technische Hoogeschool
+                te Bandoeng, yang sekarang dikenal sebagai Institut Teknologi
+                Bandung.
+            </p>
+
+            <p>
+                Bersama Mohammad Hatta, Soekarno membacakan Proklamasi
+                Kemerdekaan Indonesia pada tanggal 17 Agustus 1945.
+                Setelah kemerdekaan Indonesia, Soekarno menjadi Presiden
+                pertama Republik Indonesia.
+            </p>
+
+            <p>
+                Soekarno dikenal sebagai tokoh yang memiliki peran penting
+                dalam pergerakan nasional Indonesia dan merupakan salah satu
+                tokoh yang menyampaikan gagasan mengenai dasar negara
+                Indonesia, termasuk Pancasila.
+            </p>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>
+                © 2026 | Biodata Ir. Soekarno | Tugas HTML
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
